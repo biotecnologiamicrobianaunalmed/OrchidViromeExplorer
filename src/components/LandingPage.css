@@ -1,0 +1,159 @@
+/* Centrado vertical y horizontal del rectángulo animado */
+
+.header-content-outer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Ajuste para el rectángulo animado para que no ocupe toda la pantalla */
+.slide-in-rectangle {
+  height: 100vh;
+  min-width: 520px;
+  width: 900px;
+  max-width: 48vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  margin-right: auto;
+  pointer-events: auto;
+}
+/* Animación: rectángulo oscuro deslizando de izquierda a derecha */
+.slide-in-rectangle {
+  background: rgba(20, 20, 20, 0.85);
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.4);
+  padding: 2.5rem 2rem;
+  max-width: 850px;
+  margin: 0;
+  transform: translateX(-120%);
+  opacity: 0;
+  transition: transform 0.9s cubic-bezier(0.77,0,0.175,1), opacity 0.7s;
+}
+.slide-in-rectangle.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Animación de fade-in para los textos */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s 0.3s, transform 0.7s 0.3s;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Ajuste para la imagen de fondo */
+.image-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(0.4);
+}
+
+/* Ajuste para el contenedor principal de la cabecera con imagen */
+.header-with-image {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Fondo de video a pantalla completa */
+.header-with-video {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: 0; /* ensure video sits above container background */
+  filter: brightness(0.4);
+}
+
+.header-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1; /* ensure text sits above the video */
+}
+
+.header-text {
+  color: white;
+  text-align: center;
+  max-width: 1100px;
+  padding: 3rem 2.5rem 2.5rem 2.5rem;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+}
+
+.header-text h1 {
+  font-size: 6.2rem;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin-bottom: 1.2rem;
+}
+
+.header-text .authors {
+  font-size: 2.2rem;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+.abstract-box {
+  font-size: 1.55rem;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  backdrop-filter: none;
+  margin-top: 2.5rem;
+}
+
+.abstract-box {
+  /* eliminado el fondo y el cuadro */
+}
+
+/* Sección del mapa con transición suave */
+.map-section {
+  background-color: #1f1f1f;
+  padding: 3rem 1rem;
+  margin-top: -5px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.map-section > * {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+/* Ensure the overall landing container sits on dark background */
+.landing-container {
+  background-color: #1f1f1f;
+}
