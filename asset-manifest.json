@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/OrchidViromeExplorer/static/css/main.b6424371.css",
-    "main.js": "/OrchidViromeExplorer/static/js/main.bcb27af2.js",
+    "main.js": "/OrchidViromeExplorer/static/js/main.bcff03e6.js",
     "static/js/453.e8b5258b.chunk.js": "/OrchidViromeExplorer/static/js/453.e8b5258b.chunk.js",
     "static/media/orchids_image.jpg": "/OrchidViromeExplorer/static/media/orchids_image.827e8ef52589aef1595c.jpg",
     "index.html": "/OrchidViromeExplorer/index.html",
     "main.b6424371.css.map": "/OrchidViromeExplorer/static/css/main.b6424371.css.map",
-    "main.bcb27af2.js.map": "/OrchidViromeExplorer/static/js/main.bcb27af2.js.map",
+    "main.bcff03e6.js.map": "/OrchidViromeExplorer/static/js/main.bcff03e6.js.map",
     "453.e8b5258b.chunk.js.map": "/OrchidViromeExplorer/static/js/453.e8b5258b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b6424371.css",
-    "static/js/main.bcb27af2.js"
+    "static/js/main.bcff03e6.js"
   ]
 }
